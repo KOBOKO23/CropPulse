@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Up - CropPulse{% endblock %}
+
+{% block content %}
+<h2>Create Your Account</h2>
+<form method="POST" action="/signup/" class="signup-form">
+    {% csrf_token %}
+    
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="personal_number">Personal Number:</label>
+    <input type="text" name="personal_number" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Create Account</button>
+</form>
+{% endblock %}

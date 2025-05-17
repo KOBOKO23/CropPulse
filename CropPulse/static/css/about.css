@@ -1,0 +1,71 @@
+/* about.css */
+
+/* Container for About Page */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+/* Headings */
+.about-container h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.about-container p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Unordered Lists */
+.about-container ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.about-container ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+    list-style-type: disc;
+}
+
+/* Emphasized Text */
+.about-container strong {
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px 15px;
+    }
+
+    .about-container h1 {
+        font-size: 2em;
+    }
+
+    .about-container h2 {
+        font-size: 1.4em;
+    }
+
+    .about-container p,
+    .about-container ul li {
+        font-size: 1em;
+    }
+}

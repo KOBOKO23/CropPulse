@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - CropPulse{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <h1>Welcome to CropPulse</h1>
+    <p>Smart data, stronger harvests—securing food through informed farming.</p>
+
+    <!-- Scrolling Image Section -->
+    <div class="scrolling-images">
+        <div class="image-track">
+            <img src="{% static 'images/maize1.png' %}" alt="Maize">
+            <img src="{% static 'images/maize2.png' %}" alt="Maize">
+            <img src="{% static 'images/maize3.png' %}" alt="Maize">
+            <img src="{% static 'images/cassava.png' %}" alt="Cassava">
+            <img src="{% static 'images/avocado.png' %}" alt="Avocado">
+            <img src="{% static 'images/tea.png' %}" alt="Tea">
+
+            <img src="{% static 'images/tea.png' %}" alt="Tea">
+            <img src="{% static 'images/avocado.png' %}" alt="Avocado">
+            <img src="{% static 'images/cassava.png' %}" alt="Cassava">
+            <img src="{% static 'images/maize3.png' %}" alt="Maize">
+            <img src="{% static 'images/maize1.png' %}" alt="Maize">
+            <img src="{% static 'images/maize2.png' %}" alt="Maize">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <h2>What CropPulse Offers</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Digitized Field Reports</h3>
+                <p>Quickly submit and access Agro-1 to Agro-19 reports with clean, structured forms.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Automated Insights</h3>
+                <p>Transform raw field data into trends that inform smart farming practices.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Multi-level Access</h3>
+                <p>Dashboards for observers, analysts, and policymakers with role-based permissions.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

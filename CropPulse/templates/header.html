@@ -1,0 +1,39 @@
+<header>
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+        <ul class="nav-right">
+            {% if user.is_authenticated %}
+                <li>
+                    <form method="POST" action="{% url 'logout' %}" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" style="background: none; border: none; color: inherit; cursor: pointer;">Logout</button>
+                    </form>
+                </li>
+            {% else %}
+                <li><a href="#" onclick="toggleLoginModal()">Login</a></li>
+                <li><a href="/signup/">Sign Up</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <button class="close" onclick="toggleLoginModal()" aria-label="Close">&times;</button>
+        <h2>Login</h2>
+        <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>

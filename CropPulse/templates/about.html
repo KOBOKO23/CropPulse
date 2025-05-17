@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}About - CropPulse{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+<div class="about-container">
+    <h1>About CropPulse</h1>
+    <p><strong>CropPulse</strong> is a digital platform designed to support agricultural researchers, meteorologists, and farmers by capturing and organizing field-level agrometeorological data.</p>
+
+    <h2>Our Mission</h2>
+    <p>We strive to strengthen food security by equipping stakeholders with reliable, real-time data that drives smart agricultural decisions.</p>
+
+    <h2>What We Do</h2>
+    <ul>
+        <li>Digitize agrometeorological field reports like Agro-1 to Agro-19.</li>
+        <li>Generate actionable insights from sowing, phenology, yield, and weather data.</li>
+        <li>Provide accessible dashboards for researchers and extension officers.</li>
+        <li>Promote precision agriculture through data-driven tools.</li>
+    </ul>
+
+    <h2>Why CropPulse?</h2>
+    <p>Traditionally, field data was collected manually and analyzed slowly. <strong>CropPulse</strong> bridges this gap by enabling faster, smarter, and more consistent agricultural monitoring to improve food productivity and resilience.</p>
+
+    <h2>Who We Serve</h2>
+    <ul>
+        <li>Field Researchers & Agricultural Observers</li>
+        <li>Farmers & Farmer Cooperatives</li>
+        <li>NGOs & Development Partners</li>
+        <li>Government and Academic Institutions</li>
+    </ul>
+
+    <p><strong>Together, let's digitize farming for a more secure future.</strong></p>
+</div>
+{% endblock %}
